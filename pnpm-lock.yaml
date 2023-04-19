@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  hammerjs:
+    specifier: ^2.0.8
+    version: 2.0.8
+
 devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
@@ -49,9 +54,6 @@ devDependencies:
   eslint-plugin-svelte3:
     specifier: ^4.0.0
     version: 4.0.0(eslint@8.38.0)(svelte@3.58.0)
-  hammerjs:
-    specifier: ^2.0.8
-    version: 2.0.8
   happy-dom:
     specifier: ^9.8.2
     version: 9.8.2
@@ -1860,7 +1862,7 @@ packages:
   /hammerjs@2.0.8:
     resolution: {integrity: sha512-tSQXBXS/MWQOn/RKckawJ61vvsDpCom87JgxiYdGwHdOa0ht0vzUWDlfioofFCRU0L+6NGDt6XzbgoJvZkMeRQ==}
     engines: {node: '>=0.8.0'}
-    dev: true
+    dev: false
 
   /happy-dom@9.8.2:
     resolution: {integrity: sha512-zfotLwDIJt332EDSLLMaQ2hbRSrDshZKb78jBdim8wWpoJ40r3xtA1eNRf5o8O19qZYIV151emgAPCq96GzpEg==}
