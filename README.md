@@ -17,14 +17,14 @@ npm install --save svelte-hammertime
 To use svelte-hammertime, you first need to import the desired gesture handlers from the library:
 
 ```js
-import { pan, swipe } from 'svelte-hammertime';
+import { pan, swipe } from "svelte-hammertime";
 ```
 
 Next, you can use the use directive to attach the gesture handlers to an element:
 
 ```svelte
 <script>
-  import { pan, swipe } from 'svelte-hammertime';
+  import { pan, swipe } from "svelte-hammertime";
 
   let x = 0;
   let y = 0;
@@ -35,10 +35,9 @@ Next, you can use the use directive to attach the gesture handlers to an element
   }
 
   function handleSwipe(event) {
-    console.log('Swiped!', event.direction);
+    console.log("Swiped!", event.direction);
   }
 </script>
-
 
 <div use:pan={handlePan} use:swipe={handleSwipe}>...</div>
 ```
@@ -48,7 +47,7 @@ In this example, the pan and swipe gesture handlers are attached to a div elemen
 Note that you can attach multiple gesture handlers to the same element by using multiple use directives:
 
 ```html
-<div use:pan={handlePan} use:swipe={handleSwipe}>...</div>
+<div use:pan="{handlePan}" use:swipe="{handleSwipe}">...</div>
 ```
 
 ## Available Gesture Handlers
@@ -65,19 +64,18 @@ The following gesture handlers are available in svelte-hammertime:
 You can import them individually or all together using the wildcard:
 
 ```js
-import { pan, swipe } from 'svelte-hammertime';
-import * as hammertime from 'svelte-hammertime';
+import { pan, swipe } from "svelte-hammertime";
+import * as hammertime from "svelte-hammertime";
 ```
 
-
 ## Typescript Support
+
 svelte-hammertime also provides Typescript types for the gesture handlers. If you are using Typescript in your Svelte project, you can import the types from the library:
 
 ```ts
-import type { PanEvent } from 'svelte-hammertime';
+import type { PanEvent } from "svelte-hammertime";
 ```
 
 ## License
 
 svelte-hammertime is released under the MIT License.
-

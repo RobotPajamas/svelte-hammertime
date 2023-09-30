@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* eslint-disable */
   import { pan } from "$lib";
   import { DIRECTION_ALL } from "hammerjs";
 
