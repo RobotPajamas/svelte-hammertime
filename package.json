@@ -1,6 +1,6 @@
 {
   "name": "@robotpajamas/svelte-hammertime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Svelte-centric HammerJS .",
   "homepage": "https://github.com/robotpajamas/svelte-hammertime",
   "repository": {
